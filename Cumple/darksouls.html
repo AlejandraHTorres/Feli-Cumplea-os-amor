@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Souls 🗡️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="souls-bg">
+  <div class="carta souls-carta">
+
+    <h1> Ashen One 🗡️</h1>
+    <p class="souls-intro">
+      “Si nuestra historia existiera en el mundo del Dark...”
+    </p>
+    <p>
+     Amor mio, si nuestra historia existiera en el mundo de Dark Souls, 
+     no sería de esas fáciles ni rápidas. Sería de las que se construyen poco a poco, 
+     entre caídas, silencios, risas inesperadas y momentos en los que solo seguir adelante
+    ya es un logro. Y aun así, aquí estamos.
+    Admiro mucho la forma en la que enfrentas las cosas y la perseverancia con la que consigues lo que quieres.
+    Como esos no-muertos tercos que, aunque el mundo parezca oscuro y pesado, se levantan una vez más. No porque no canse, sino porque rendirse nunca ha sido lo tuyo. Esa fuerza tranquila, medio seria y muy real, dice más de ti de lo que crees.
+    Para mí, tenerte cerca es como encontrar una hoguera en medio del camino:
+     no lo soluciona todo, pero te da calma, descanso y ganas de continuar. 
+     Un lugar seguro donde puedes ser tú, sin máscaras ni armaduras todo el tiempo.
+    Gracias por estar, por escuchar, por compartir risas, pensamientos raros y silencios cómodos. Gracias por recordarme que incluso en mundos complicados pueden existir conexiones bonitas y sinceras.
+    No sé qué venga después del siguiente tramo del camino, pero sí sé algo:
+    no caminas solo.
+    Y mientras sigas avanzando… no estás hueco.<br>
+    Te amo mucho mucho 🤍
+    </p>
+
+    <div class="firma">
+      — Praise the Sun ☀️
+    </div>
+  </div>
+  <div class="panel-fondos">
+  <h1>Fondos de pantalla 🖼️</h1>
+  <p class="frase">
+    “Te hice varios modelos que creo pueden gustarte,  
+    en cada uno de ellos, te regalo mi tiempo,  
+    mis habilidades, mi cariño y esfuerzo.”
+  </p>
+  <div class="galeria">
+    <img src="souls1.png" alt="">
+    <img src="souls2.png" alt="">
+    <img src="souls3.png" alt="">
+    <img src="souls4.png" alt="">
+  </div>
+  <button class="btn-volver" onclick="window.location.href='index.html'">
+    Volver al inicio
+  </button>
+</div>
+<audio id="bgMusic" loop>
+  <source src="darks.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("bgMusic");
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        document.addEventListener("mousemove", () => {
+          audio.play();
+        }, { once: true });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
